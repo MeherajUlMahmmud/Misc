@@ -1,0 +1,43 @@
+In the next chapter, we shall explore the deepest of the impossibility results that limit what any computing device can do. Before proceeding to these results, we should first review more practical restrictions on what computers can achieve. For they have become a major locus of modern work and they explore restrictions that have major practical limitations.
+
+One is that computer memory storage is finite for all machine that we can access. This limitation of space means that any intermediate computation that requires ever larger memory storage will eventually fail. Of course it means that a simple task, such as listing in one device all the infinite digits of π, cannot be completed.
+
+The limitation that has attracted more strenuous analysis over the last half century and more is the limitation of time. Some computations are completed quickly. Others take more time. Still others turn out to take so much time that they are precluded as a practical matter. That a computer can give us the result in a million years is cold comfort if we need the result now.
+
+These limitations of time are important to us in our everyday lives. Encryption enables secure internet transactions. It depends on the computational intractability of a simple arithmetic puzzle. It is prohibitively difficult to factor a composite number into its two prime factors. While computers can eventually factor any composite number given enough space and time, present computational powers are too weak for factorization of composite numbers used routinely in encryption. That factorization is what is needed to decrypt the message being sent. As long as it remains outside our reach, our methods of encryption are secure.
+
+The theory of algorithmic complexity addresses the time requirements of computational tasks. Its focus is the relationship between the size of a computational task and the number of computational steps needed to complete the task. The difficulty of a computational task is assessed by how many steps are needed to complete it as a function of "n," the size of the problem. Tractable tasks are polynomial in n and can be completed in "polynomial time." They require steps that are some multiple of n or n2 or n3 or ... or  some finite sum of them.
+
+The algorithm for multiplication routinely taught in schools is a polynomial algorithm. The multiplication is carried out digit by digit. To multiply 123 by 456, for example, we would multiply the digits pairwise from each number, 1x4, 2x4, 3x4, ... and locate the results in a grid that automatically factors in powers of ten; and then add them up. To see how many steps are involved, it is easiest to write out the multiplications explicitly.
+What results are 3x3 = 32 products. We need  32 - 1 additions to sum them and complete the multiplication. Altogether, we need 2x32 - 1 steps to complete the multiplication. This formula is rounded off to 2x32.
+
+The result is easy to generalize:
+
+To multiply two n digit numbers by the standard, school algorithm requires 2n2 steps.
+
+The rounding off of the formulae is routine in this sort of analysis. For the exact number of steps is not what matters. Rather it is the dependency on n. For what is interesting is not how many steps are needed to multiply small numbers. It is how many steps are needed to multiply large numbers, such as numbers with 100 or 200 digits. There, rounding off 1 step makes the tiniest of changes.
+
+As a general matter, finding a polynomial time dependence such this quadratic dependence is relatively good news for an algorithm. Such dependencies are commonly within the reach of our computing power. That the number of steps is 2n2, as opposed to say 3n2 or 5n2 is a matter of lesser concern.'
+Exponential algorithms
+This example from Sanjeev Arora and Boaz Barak, Computational Complexity: A Modern Approach. Cambridge: Cambridge University Press, 2009, p.xix, p.xxi.
+The problem cases in algorithmic complexity are those that require steps that grow exponentially with the size of the problem. A simple example is the "dinner problem." According to it, we have n friends and we wish to invite the largest set of them possible for a dinner party. The difficulty is that certain pairs of them are incompatible and cannot be invited together. We have a list of those pairs.
+
+A simple algorithm starts with the largest set and examines smaller subsets one by one until the largest subset is found that hosts diners without conflict. Since there are 2n subsets of a set of size n, the algorithm has to check something of the order of 2n subsets, that is, carry out something like 2n steps.
+The particular dependency does not matter here. For example, It could be 2n or 3n or en or something more. What matters is that the function is an exponential. This is not a worry if the size of the problem is small. It becomes an insuperable computational difficulty once the size of the problem becomes large.
+
+
+To see this, compare the complexity of the multiplication algorithm, 2n2, with the dinner problem complexity of  2n:
+
+When n is small, there is not much difference in their difficulties:
+
+The number steps required by the quadratic algorithm is within the reach of readily available computers. The exponential algorithm, however, taxes them all. Matters get exponentially worse as we consider larger problem sizes, say, n=200 or n=1,000.
+
+The checkers case was demonstrated by J. M. Robson, "N by N Checkers is EXPTIME Complete," SIAM J. Comput. 13 (1984), pp. 252-67.
+It turns out to be strikingly easy to stumble onto problems for which only exponential algorithms are known. Board games, such as chess, checkers and go, are such cases. Here, of course, we replace the familiar 8x8 board of checkers by larger boards of size nxn and find that the natural algorithms become exponentially demanding as n grows.
+The dinner party problem can be solved with an impractical exponential algorithm. Is that as good as it gets? Might there be a faster, polynomial time algorithm that solves the dinner party problem, thereby making it computationally tractable?
+
+The answer is that we do not know for sure. This innocent question is, presently, the biggest open question in algorithmic complexity. The dinner party problems belongs to a large class of intractable problems known as NP-complete for which a polynomial algorithm has not been found, but there is no demonstration that one cannot be found.
+
+The class is such that, were a polynomial algorithm to be found for one of the problems, it could be used to solve them all. As a result there is a strong premium on determining whether this class of problems can be solved by a polynomial time algorithm or not.
+
+The premium is monetary. In 2000, the Clay Mathematics Institute mounted the Millennium Grand Challenge in Mathematics. It offered a $1,000,000 for solving each of seven outstanding mathematical problems. Resolving the NP-completeness problem was one of them. The prize remains unclaimed.

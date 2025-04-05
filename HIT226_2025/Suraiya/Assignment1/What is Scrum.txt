@@ -1,0 +1,53 @@
+Scrum vs Agile: What is the difference?
+“We need to be Agile!” “Let’s implement Scrum!” You might have heard these phrases thrown around in your organization as you decide on a project management philosophy for your software development.
+
+Does that mean that Scrum and Agile are synonyms? If not, why are these two concepts so often used together? Can an organization be agile without Scrum? Can Scrum exist without Agile?
+
+The terms Scrum and Agile are often used interchangeably, but they are not the same thing.
+
+The short answer is that Scrum is a framework for implementing Agile. But what does that mean? To understand the relationship between Scrum and Agile, and what that means for your development team, it’s important to delve into the history and definition of each concept.
+
+Let’s start with Agile
+Agile was first introduced in 2001 as a response to the traditional waterfall approach to software development. The waterfall model breaks down project activities into linear, sequential phases. Each project starts with the requirements gathering phase, followed by design, implementation, testing, and finally deployment.
+The main problem with the waterfall approach is that it doesn’t allow for much flexibility. Once you’ve started down the path of development, it’s challenging to make changes.
+
+In 2001, in an effort to overcome the limitations of the waterfall model, a group of software developers nailed down the first official definition of the agile approach in a document called the “Agile Manifesto.” This document defined four values that would become the cornerstones of agile project development:
+
+Individuals and interactions over processes and tools
+The manifesto’s first value stresses that people are at the forefront of the agile process instead of rigid rules or processes. The agile approach allows individuals to take an active role in developing software, encouraging cross-functional discussion and collaboration along the way. Agile developers focus on creating products that meet the needs of real users rather than getting bogged down in the details of a particular technology or methodology.
+
+The key to this value is face-to-face interactions instead of communicating solely via email or phone. Agile developers work in small teams of about five to 10 people who usually share an open office space. This setup allows them to closely collaborate and fosters a comfortable work environment where feedback is easily exchanged. 
+
+
+
+Working software over comprehensive documentation
+Since requirements can change quickly, it’s not practical to write extensive documents ahead of time about what features a product will have and how they will be implemented. Delivering a product should be a higher priority than creating detailed documentation. That doesn’t mean that Agile teams don’t ever create documentation! Agile teams produce documentation, but only when it’s valuable and necessary. And by documentation, I don’t necessarily mean Word or PDF files. Developers often create visual mockups to communicate with customers or insert comments directly into code to capture technical details.
+
+Customer collaboration over contract negotiation
+The third value states that working closely with the customers should be a priority over contract negotiation. By talking directly to customers about what features they need and how to implement them, agile developers and team members discover more about their customers’ needs than any contract or specification could express. 
+
+Agile teams don’t spend time negotiating requirements with customers as if they were lawyers preparing a contract. Suppose the customer becomes unhappy with the product: the developer can talk directly with the customer again to find out why and discuss whether any changes are possible. 
+
+Responding to change over following a plan
+The fourth value states that responding to change should be a priority over following a plan. That doesn’t mean that agile developers don’t plan before building a specific product or feature. They do, but they also accept that their plans may change frequently. To minimize the risks, agile developers plan in short iterations. 
+
+Okay, so this is Agile in a nutshell: a set of guiding principles for software development that puts individuals, working software, and customer collaboration above processes and tools.
+
+A visual representation of Scrum
+
+So what is Scrum?
+In 2002, Scrum co-creator Jeff Sutherland wrote an article, “Agile Can Scale: Inventing and Reinventing Scrum in Five Companies,” in which he described Scrum as a framework that focuses on the core Agile values with the aim to “deliver as much quality software as possible within a series of short timeboxes.”
+
+The Scrum framework consists of three roles, five events, and three artifacts.
+
+The three roles are the Scrum master, product owner, and team. The Scrum Master is responsible for ensuring that the team follows the Scrum process and that they are productive and effective. The product owner is responsible for the product vision and ensuring that the team has what they need to be successful. The team is responsible for delivering the product.
+
+In Scrum, teams work in short bursts called sprints. A sprint lasts for a fixed amount of time, usually two or four weeks. Each sprint starts with a planning meeting. Once the goals are clear, the team commits to the deliverables, estimates the hours required for each task, and then gets to work. The goals should not change during the sprint.
+
+At the end of each sprint, the team presents their work to stakeholders in a demo meeting called a sprint review meeting. The product is considered “done” when all the sprint tasks are completed, approved by the stakeholders, and documented.
+
+Sprints are followed by a short retrospective meeting where the team discusses what went well and how to improve in future sprints.
+
+Then, the process starts over again until the project is completed.
+
+Now, we’ve covered enough ground to answer the initial question:

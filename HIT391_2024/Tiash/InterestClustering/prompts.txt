@@ -1,0 +1,42 @@
+this is the description of my dataset,
+
+Develop clustering algorithms on the ‘kaggle_Interests_group’ dataset
+https://www.kaggle.com/code/skanderhaddar/clustering-groups-of-hobbies/in put, which contains 4 groups of 6340 people and 217 hobby's and interest questions. You can choose any of the following two clustering methods:
+1) K-means
+2) Hierarchical clustering 3) DBSCAN
+4) BIRCH
+
+The dataset has 217 columns, each representing a hobby or interest question. The values in the columns are binary, with 1 indicating that the person has an interest in that hobby or interest, and 0 indicating that they do not. The dataset also contains a column named 'Group' that specifies the group to which each person belongs. The goal is to cluster the people based on their interests and hobbies. You can use any clustering algorithm of your choice to achieve this.
+
+
+In this project,
+I need to perform these tasks on the dataset
+1) Data Preprocessing: Load the provided dataset and perform any necessary preprocessing steps such as normalization or standardization.
+2) Data spliting: split datasets into 3 disjoint datasets respectively for training, evaluating, and testing.
+3) Model Implementation: Implement a Support Vector Machine classifier using any existing library (e.g., sklearn, scikit-learn, pytorch, tensorflow, etc.) or designing models by yourself.
+4) Model Training: Train the SVM classifier using the training dataset.
+5) Model Tuning, Implement hyperparameter tuning on the evaluating dataset using techniques like grid search or random search to improve the model's performance.
+      
+6) Model Evaluation: Evaluate the trained model on the testing dataset using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score, etc.
+
+
+
+
+
+
+
+you need to use any 2 clustering methods from these 4 methods
+
+1) K-means
+2) Hierarchical clustering
+3) DBSCAN
+4) BIRCH
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LearningPath - Study Session Tracker</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>LearningPath</h1>
+			<p>Track your learning journey, one study session at a time</p>
+		</header>
+
+		<div class="form-container">
+			<div class="form-header">
+				<h2>Log Your Study Session</h2>
+				<p>Record details about your study session to track your progress.</p>
+			</div>
+
+			<form id="study-form">
+				<!-- Basic Information -->
+				<div class="form-group">
+					<label for="subject">Subject/Course *</label>
+					<input type="text" id="subject" name="subject" placeholder="e.g., Mathematics, Computer Science"
+						required>
+					<div class="error" id="subject-error">Please enter the subject you studied</div>
+				</div>
+
+				<div class="form-group">
+					<label for="topic">Specific Topic *</label>
+					<input type="text" id="topic" name="topic" placeholder="e.g., Linear Algebra, React Components"
+						required>
+					<div class="error" id="topic-error">Please enter the specific topic you studied</div>
+				</div>
+
+				<!-- Time Information -->
+				<div class="time-fields">
+					<div class="form-group">
+						<label for="date">Date *</label>
+						<input type="date" id="date" name="date" required>
+						<div class="error" id="date-error">Please select a date</div>
+					</div>
+
+					<div class="form-group">
+						<label for="duration">Duration (minutes) *</label>
+						<input type="number" id="duration" name="duration" min="5" max="480" placeholder="e.g., 60"
+							required>
+						<div class="error" id="duration-error">Please enter a valid duration (5-480 minutes)</div>
+					</div>
+				</div>
+
+				<!-- Productivity Rating -->
+				<div class="form-group">
+					<label for="productivity">Productivity Rating *</label>
+					<div class="rating-container">
+						<input type="range" id="productivity" name="productivity" min="1" max="10" value="7">
+						<span class="rating-value" id="productivity-value">7</span>
+						<span>/10</span>
+					</div>
+				</div>
+
+				<!-- Learning Objectives -->
+				<div class="form-group">
+					<label>Learning Objectives (What did you accomplish?) *</label>
+					<div class="objectives-container" id="objectives-container">
+						<div class="objective-item">
+							<input type="text" name="objectives[]" placeholder="e.g., Understood concept X" required>
+							<button type="button" class="remove-objective" title="Remove objective">✕</button>
+						</div>
+					</div>
+					<button type="button" class="add-objective" id="add-objective">+ Add another objective</button>
+					<div class="error" id="objectives-error">Please add at least one learning objective</div>
+				</div>
+
+				<!-- Study Environment -->
+				<div class="form-group">
+					<label for="environment">Study Environment</label>
+					<select id="environment" name="environment">
+						<option value="">-- Select environment --</option>
+						<option value="home">Home</option>
+						<option value="library">Library</option>
+						<option value="cafe">Café</option>
+						<option value="classroom">Classroom</option>
+						<option value="outdoor">Outdoor space</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<!-- Notes -->
+				<div class="form-group">
+					<label for="notes">Notes or Reflections</label>
+					<textarea id="notes" name="notes" rows="4"
+						placeholder="Any challenges faced? Things to follow up on next time?"></textarea>
+				</div>
+
+				<!-- Submit Button -->
+				<button type="submit" id="submit-btn">Submit Study Session</button>
+			</form>
+
+			<!-- Success Message (Hidden by default) -->
+			<div class="success-message" id="success-message">
+				<h3>Study session logged successfully!</h3>
+				<p>Keep up the good work. Your learning data is being analyzed to provide personalized insights.</p>
+			</div>
+
+			<div class="form-footer">
+				<p>LearningPath helps you optimize your study habits through data-driven insights.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

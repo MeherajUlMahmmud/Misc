@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FastTrack Ordering System - Feedback Form</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<!-- Header Section -->
+		<header>
+			<div class="logo">FastTrack</div>
+			<div class="tagline">Streamlined ordering for your busy life</div>
+		</header>
+
+		<!-- Success Message (Hidden by default) -->
+		<div class="success-message" id="successMessage">
+			Thank you for your feedback! We'll use it to improve your FastTrack experience.
+		</div>
+
+		<!-- Feedback Form Container -->
+		<div class="form-container" id="feedbackForm">
+			<h2 class="form-heading">Ordering Experience Feedback</h2>
+			<p>Help us improve our digital ordering system by sharing your experience.</p>
+
+			<form id="orderFeedback">
+				<!-- Personal Information Section -->
+				<div class="form-group">
+					<label for="fullName">Full Name</label>
+					<input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+					<div class="error-message" id="fullNameError">Please enter your full name</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email address">
+					<div class="error-message" id="emailError">Please enter a valid email address</div>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Phone Number (Optional)</label>
+					<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+				</div>
+
+				<!-- Usage Frequency -->
+				<div class="form-group">
+					<label for="orderFrequency">How often do you use our ordering system?</label>
+					<select id="orderFrequency" name="orderFrequency">
+						<option value="">Select an option</option>
+						<option value="firstTime">This is my first time</option>
+						<option value="occasionally">Occasionally (1-2 times per month)</option>
+						<option value="regularly">Regularly (1-2 times per week)</option>
+						<option value="frequently">Frequently (3+ times per week)</option>
+					</select>
+					<div class="error-message" id="orderFrequencyError">Please select an option</div>
+				</div>
+
+				<!-- Ordering Method -->
+				<div class="form-group">
+					<label>How did you place your most recent order?</label>
+					<div class="radio-group">
+						<div class="radio-option">
+							<input type="radio" id="deviceMobile" name="orderDevice" value="mobile">
+							<label for="deviceMobile">Mobile app</label>
+						</div>
+						<div class="radio-option">
+							<input type="radio" id="deviceWebsite" name="orderDevice" value="website">
+							<label for="deviceWebsite">Website</label>
+						</div>
+						<div class="radio-option">
+							<input type="radio" id="deviceKiosk" name="orderDevice" value="kiosk">
+							<label for="deviceKiosk">In-store kiosk</label>
+						</div>
+					</div>
+					<div class="error-message" id="orderDeviceError">Please select an option</div>
+				</div>
+
+				<!-- Rating System -->
+				<div class="form-group">
+					<label>Please rate the following aspects of your ordering experience:</label>
+
+					<div class="rating-container">
+						<!-- Navigation Rating -->
+						<div class="rating-item">
+							<label>Ease of Navigation</label>
+							<div class="rating-buttons">
+								<input type="range" min="1" max="5" value="3" id="navigationRating">
+								<span class="rating-value" id="navigationValue">3</span>
+							</div>
+						</div>
+
+						<!-- Speed Rating -->
+						<div class="rating-item">
+							<label>Speed of Ordering</label>
+							<div class="rating-buttons">
+								<input type="range" min="1" max="5" value="3" id="speedRating">
+								<span class="rating-value" id="speedValue">3</span>
+							</div>
+						</div>
+
+						<!-- Accuracy Rating -->
+						<div class="rating-item">
+							<label>Order Accuracy</label>
+							<div class="rating-buttons">
+								<input type="range" min="1" max="5" value="3" id="accuracyRating">
+								<span class="rating-value" id="accuracyValue">3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Features Used -->
+				<div class="form-group">
+					<label>What features did you use during your ordering experience?</label>
+					<div class="checkbox-group">
+						<div class="checkbox-option">
+							<input type="checkbox" id="featureFavorites" name="features" value="favorites">
+							<label for="featureFavorites">Saved favorites</label>
+						</div>
+						<div class="checkbox-option">
+							<input type="checkbox" id="featureCustomization" name="features" value="customization">
+							<label for="featureCustomization">Item customization</label>
+						</div>
+						<div class="checkbox-option">
+							<input type="checkbox" id="featureTracking" name="features" value="tracking">
+							<label for="featureTracking">Order tracking</label>
+						</div>
+						<div class="checkbox-option">
+							<input type="checkbox" id="featurePromos" name="features" value="promos">
+							<label for="featurePromos">Promotions/discounts</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Suggestions -->
+				<div class="form-group">
+					<label for="improvementSuggestions">What suggestions do you have for improving our ordering
+						system?</label>
+					<textarea id="improvementSuggestions" name="improvementSuggestions" rows="4"
+						placeholder="Please share your suggestions..."></textarea>
+				</div>
+
+				<!-- Order Time -->
+				<div class="form-group">
+					<label for="timeToOrder">Approximately how long did it take you to complete your order?</label>
+					<select id="timeToOrder" name="timeToOrder">
+						<option value="">Select an option</option>
+						<option value="lessThan1">Less than 1 minute</option>
+						<option value="1to3">1-3 minutes</option>
+						<option value="3to5">3-5 minutes</option>
+						<option value="moreThan5">More than 5 minutes</option>
+					</select>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="form-group">
+					<button type="submit" id="submitButton">Submit Feedback</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>© 2025 FastTrack Ordering System. All rights reserved.</p>
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+Standard Wide Color (beta) Automatic Light Dark
+From Wikipedia, the free encyclopedia
+Algorithmic information theory (AIT) is a branch of theoretical computer science that concerns itself with the relationship between computation and information of computably generated objects (as opposed to stochastically generated), such as strings or any other data structure. In other words, it is shown within algorithmic information theory that computational incompressibility "mimics" (except for a constant that only depends on the chosen universal programming language) the relations or inequalities found in information theory.[1] According to Gregory Chaitin, it is "the result of putting Shannon's information theory and Turing's computability theory into a cocktail shaker and shaking vigorously."[2]
+
+Besides the formalization of a universal measure for irreducible information content of computably generated objects, some main achievements of AIT were to show that: in fact algorithmic complexity follows (in the self-delimited case) the same inequalities (except for a constant[3]) that entropy does, as in classical information theory;[1] randomness is incompressibility;[4] and, within the realm of randomly generated software, the probability of occurrence of any data structure is of the order of the shortest program that generates it when running on a universal machine.[5]
+
+AIT principally studies measures of irreducible information content of strings (or other data structures). Because most mathematical objects can be described in terms of strings, or as the limit of a sequence of strings, it can be used to study a wide variety of mathematical objects, including integers. One of the main motivations behind AIT is the very study of the information carried by mathematical objects as in the field of metamathematics, e.g., as shown by the incompleteness results mentioned below. Other main motivations came from surpassing the limitations of classical information theory for single and fixed objects, formalizing the concept of randomness, and finding a meaningful probabilistic inference without prior knowledge of the probability distribution (e.g., whether it is independent and identically distributed, Markovian, or even stationary). In this way, AIT is known to be basically founded upon three main mathematical concepts and the relations between them: algorithmic complexity, algorithmic randomness, and algorithmic probability.[6][4]
+
+Overview
+Algorithmic information theory principally studies complexity measures on strings (or other data structures). Because most mathematical objects can be described in terms of strings, or as the limit of a sequence of strings, it can be used to study a wide variety of mathematical objects, including integers.
+
+Informally, from the point of view of algorithmic information theory, the information content of a string is equivalent to the length of the most-compressed possible self-contained representation of that string. A self-contained representation is essentially a program—in some fixed but otherwise irrelevant universal programming language—that, when run, outputs the original string.
+
+From this point of view, a 3000-page encyclopedia actually contains less information than 3000 pages of completely random letters, despite the fact that the encyclopedia is much more useful. This is because to reconstruct the entire sequence of random letters, one must know what every single letter is. On the other hand, if every vowel were removed from the encyclopedia, someone with reasonable knowledge of the English language could reconstruct it, just as one could likely reconstruct the sentence "Ths sntnc hs lw nfrmtn cntnt" from the context and consonants present.
+
+Unlike classical information theory, algorithmic information theory gives formal, rigorous definitions of a random string and a random infinite sequence that do not depend on physical or philosophical intuitions about nondeterminism or likelihood. (The set of random strings depends on the choice of the universal Turing machine used to define Kolmogorov complexity, but any choice gives identical asymptotic results because the Kolmogorov complexity of a string is invariant up to an additive constant depending only on the choice of universal Turing machine. For this reason the set of random infinite sequences is independent of the choice of universal machine.)
+
+Some of the results of algorithmic information theory, such as Chaitin's incompleteness theorem, appear to challenge common mathematical and philosophical intuitions. Most notable among these is the construction of Chaitin's constant Ω, a real number that expresses the probability that a self-delimiting universal Turing machine will halt when its input is supplied by flips of a fair coin (sometimes thought of as the probability that a random computer program will eventually halt). Although Ω is easily defined, in any consistent axiomatizable theory one can only compute finitely many digits of Ω, so it is in some sense unknowable, providing an absolute limit on knowledge that is reminiscent of Gödel's incompleteness theorems. Although the digits of Ω cannot be determined, many properties of Ω are known; for example, it is an algorithmically random sequence and thus its binary digits are evenly distributed (in fact it is normal).
+
+History
+Algorithmic information theory was founded by Ray Solomonoff,[7] who published the basic ideas on which the field is based as part of his invention of algorithmic probability—a way to overcome serious problems associated with the application of Bayes' rules in statistics. He first described his results at a Conference at Caltech in 1960,[8] and in a report, February 1960, "A Preliminary Report on a General Theory of Inductive Inference."[9] Algorithmic information theory was later developed independently by Andrey Kolmogorov, in 1965 and Gregory Chaitin, around 1966.
+
+There are several variants of Kolmogorov complexity or algorithmic information; the most widely used one is based on self-delimiting programs and is mainly due to Leonid Levin (1974). Per Martin-Löf also contributed significantly to the information theory of infinite sequences. An axiomatic approach to algorithmic information theory based on the Blum axioms (Blum 1967) was introduced by Mark Burgin in a paper presented for publication by Andrey Kolmogorov (Burgin 1982). The axiomatic approach encompasses other approaches in the algorithmic information theory. It is possible to treat different measures of algorithmic information as particular cases of axiomatically defined measures of algorithmic information. Instead of proving similar theorems, such as the basic invariance theorem, for each particular measure, it is possible to easily deduce all such results from one corresponding theorem proved in the axiomatic setting. This is a general advantage of the axiomatic approach in mathematics. The axiomatic approach to algorithmic information theory was further developed in the book (Burgin 2005) and applied to software metrics (Burgin and Debnath, 2003; Debnath and Burgin, 2003).
+
+Precise definitions
+Main article: Kolmogorov complexity
+A binary string is said to be random if the Kolmogorov complexity of the string is at least the length of the string. A simple counting argument shows that some strings of any given length are random, and almost all strings are very close to being random. Since Kolmogorov complexity depends on a fixed choice of universal Turing machine (informally, a fixed "description language" in which the "descriptions" are given), the collection of random strings does depend on the choice of fixed universal machine. Nevertheless, the collection of random strings, as a whole, has similar properties regardless of the fixed machine, so one can (and often does) talk about the properties of random strings as a group without having to first specify a universal machine.
+
+Main article: Algorithmically random sequence
+An infinite binary sequence is said to be random if, for some constant c, for all n, the Kolmogorov complexity of the initial segment of length n of the sequence is at least n − c. It can be shown that almost every sequence (from the point of view of the standard measure—"fair coin" or Lebesgue measure—on the space of infinite binary sequences) is random. Also, since it can be shown that the Kolmogorov complexity relative to two different universal machines differs by at most a constant, the collection of random infinite sequences does not depend on the choice of universal machine (in contrast to finite strings). This definition of randomness is usually called Martin-Löf randomness, after Per Martin-Löf, to distinguish it from other similar notions of randomness. It is also sometimes called 1-randomness to distinguish it from other stronger notions of randomness (2-randomness, 3-randomness, etc.). In addition to Martin-Löf randomness concepts, there are also recursive randomness, Schnorr randomness, and Kurtz randomness etc. Yongge Wang showed[10] that all of these randomness concepts are different.
+
+(Related definitions can be made for alphabets other than the set 
+
+Specific sequence
+Algorithmic information theory (AIT) is the information theory of individual objects, using computer science, and concerns itself with the relationship between computation, information, and randomness.
+
+The information content or complexity of an object can be measured by the length of its shortest description. For instance the string
+
+"0101010101010101010101010101010101010101010101010101010101010101"
+
+has the short description "32 repetitions of '01'", while
+
+"1100100001100001110111101110110011111010010000100101011110010110"
+
+presumably has no simple description other than writing down the string itself.
+
+More formally, the algorithmic complexity (AC) of a string x is defined as the length of the shortest program that computes or outputs x, where the program is run on some fixed reference universal computer.
+
+A closely related notion is the probability that a universal computer outputs some string x when fed with a program chosen at random. This algorithmic "Solomonoff" probability (AP) is key in addressing the old philosophical problem of induction in a formal way.
+
+The major drawback of AC and AP are their incomputability. Time-bounded "Levin" complexity penalizes a slow program by adding the logarithm of its running time to its length. This leads to computable variants of AC and AP, and universal "Levin" search (US) solves all inversion problems in optimal time (apart from some unrealistically large multiplicative constant).
+
+AC and AP also allow a formal and rigorous definition of randomness of individual strings to not depend on physical or philosophical intuitions about non-determinism or likelihood. Roughly, a string is algorithmic "Martin-Löf" random (AR) if it is incompressible in the sense that its algorithmic complexity is equal to its length.
+
+AC, AP, and AR are the core sub-disciplines of AIT, but AIT spawns into many other areas. It serves as the foundation of the Minimum Description Length (MDL) principle, can simplify proofs in computational complexity theory, has been used to define a universal similarity metric between objects, solves the Maxwell daemon problem, and many others.
+
+In theoretical computer science and mathematics, computational complexity theory focuses on classifying computational problems according to their resource usage, and explores the relationships between these classifications. A computational problem is a task solved by a computer. A computation problem is solvable by mechanical application of mathematical steps, such as an algorithm.
+
+A problem is regarded as inherently difficult if its solution requires significant resources, whatever the algorithm used. The theory formalizes this intuition, by introducing mathematical models of computation to study these problems and quantifying their computational complexity, i.e., the amount of resources needed to solve them, such as time and storage. Other measures of complexity are also used, such as the amount of communication (used in communication complexity), the number of gates in a circuit (used in circuit complexity) and the number of processors (used in parallel computing). One of the roles of computational complexity theory is to determine the practical limits on what computers can and cannot do. The P versus NP problem, one of the seven Millennium Prize Problems,[1] is part of the field of computational complexity.
+
+Closely related fields in theoretical computer science are analysis of algorithms and computability theory. A key distinction between analysis of algorithms and computational complexity theory is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas the latter asks a more general question about all possible algorithms that could be used to solve the same problem. More precisely, computational complexity theory tries to classify problems that can or cannot be solved with appropriately restricted resources. In turn, imposing restrictions on the available resources is what distinguishes computational complexity from computability theory: the latter theory asks what kinds of problems can, in principle, be solved algorithmically.
+In theoretical computer science, a computational problem is one that asks for a solution in terms of an algorithm. For example, the problem of factoring
+
+"Given a positive integer n, find a nontrivial prime factor of n."
+is a computational problem that has a solution, as there are many known integer factorization algorithms. A computational problem can be viewed as a set of instances or cases together with a, possibly empty, set of solutions for every instance/case. The question then is, whether there exists an algorithm that maps instances to solutions. For example, in the factoring problem, the instances are the integers n, and solutions are prime numbers p that are the nontrivial prime factors of n. An example of a computational problem without a solution is the Halting problem. Computational problems are one of the main objects of study in theoretical computer science.
+
+One is often interested not only in mere existence of an algorithm, but also how efficient the algorithm can be. The field of computational complexity theory addresses such questions by determining the amount of resources (computational complexity) solving a given problem will require, and explain why some problems are intractable or undecidable. Solvable computational problems belong to complexity classes that define broadly the resources (e.g. time, space/memory, energy, circuit depth) it takes to compute (solve) them with various abstract machines. For example, the complexity classes
+
+P, problems that consume polynomial time for deterministic classical machines
+BPP, problems that consume polynomial time for probabilistic classical machines (e.g. computers with random number generators)
+BQP, problems that consume polynomial time for probabilistic quantum machines.
+Both instances and solutions are represented by binary strings, namely elements of {0, 1}*.[a] For example, natural numbers are usually represented as binary strings using binary encoding. This is important since the complexity is expressed as a function of the length of the input representation.
+
+In algorithmic information theory, algorithmic probability, also known as Solomonoff probability, is a mathematical method of assigning a prior probability to a given observation. It was invented by Ray Solomonoff in the 1960s.[2] It is used in inductive inference theory and analyses of algorithms. In his general theory of inductive inference, Solomonoff uses the method together with Bayes' rule to obtain probabilities of prediction for an algorithm's future outputs.[3]
+
+In the mathematical formalism used, the observations have the form of finite binary strings viewed as outputs of Turing machines, and the universal prior is a probability distribution over the set of finite binary strings calculated from a probability distribution over programs (that is, inputs to a universal Turing machine). The prior is universal in the Turing-computability sense, i.e. no string has zero probability. It is not computable, but it can be approximated.[4]
+
+Formally, the probability 
+
+Overview
+Algorithmic probability is the main ingredient of Solomonoff's theory of inductive inference, the theory of prediction based on observations; it was invented with the goal of using it for machine learning; given a sequence of symbols, which one will come next? Solomonoff's theory provides an answer that is optimal in a certain sense, although it is incomputable. Unlike, for example, Karl Popper's informal inductive inference theory,[clarification needed] Solomonoff's is mathematically rigorous.
+
+Four principal inspirations for Solomonoff's algorithmic probability were: Occam's razor, Epicurus' principle of multiple explanations, modern computing theory (e.g. use of a universal Turing machine) and Bayes’ rule for prediction.[5]
+
+Occam's razor and Epicurus' principle are essentially two different non-mathematical approximations of the universal prior.
+
+Occam's razor: among the theories that are consistent with the observed phenomena, one should select the simplest theory.[6]
+Epicurus' principle of multiple explanations: if more than one theory is consistent with the observations, keep all such theories.[7]
+At the heart of the universal prior is an abstract model of a computer, such as a universal Turing machine.[8] Any abstract computer will do, as long as it is Turing-complete, i.e. every computable function has at least one program that will compute its application on the abstract computer.
+
+The abstract computer is used to give precise meaning to the phrase "simple explanation". In the formalism used, explanations, or theories of phenomena, are computer programs that generate observation strings when run on the abstract computer. Each computer program is assigned a weight corresponding to its length. The universal probability distribution is the probability distribution on all possible output strings with random input, assigning for each finite output prefix q the sum of the probabilities of the programs that compute something starting with q.[9] Thus, a simple explanation is a short computer program. A complex explanation is a long computer program. Simple explanations are more likely, so a high-probability observation string is one generated by a short computer program, or perhaps by any of a large number of slightly longer computer programs. A low-probability observation string is one that can only be generated by a long computer program.
+
+Algorithmic probability is closely related to the concept of Kolmogorov complexity. Kolmogorov's introduction of complexity was motivated by information theory and problems in randomness, while Solomonoff introduced algorithmic complexity for a different reason: inductive reasoning. A single universal prior probability that can be substituted for each actual prior probability in Bayes's rule was invented by Solomonoff with Kolmogorov complexity as a side product.[10] It predicts the most likely continuation of that observation, and provides a measure of how likely this continuation will be.[citation needed]
+
+Solomonoff's enumerable measure is universal in a certain powerful sense, but the computation time can be infinite. One way of dealing with this issue is a variant of Leonid Levin's Search Algorithm,[11] which limits the time spent computing the success of possible programs, with shorter programs given more time. When run for longer and longer periods of time, it will generate a sequence of approximations which converge to the universal probability distribution. Other methods of dealing with the issue include limiting the search space by including training sequences.
+
+Solomonoff proved this distribution to be machine-invariant within a constant factor (called the invariance theorem)
+
+In theoretical computer science, the time complexity is the computational complexity that describes the amount of computer time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform. Thus, the amount of time taken and the number of elementary operations performed by the algorithm are taken to be related by a constant factor.
+
+Since an algorithm's running time may vary among different inputs of the same size, one commonly considers the worst-case time complexity, which is the maximum amount of time required for inputs of a given size. Less common, and usually specified explicitly, is the average-case complexity, which is the average of the time taken on inputs of a given size (this makes sense because there are only a finite number of possible inputs of a given size). In both cases, the time complexity is generally expressed as a function of the size of the input.[1]: 226  Since this function is generally difficult to compute exactly, and the running time for small inputs is usually not consequential, one commonly focuses on the behavior of the complexity when the input size increases—that is, the asymptotic behavior of the complexity. Therefore, the time complexity is commonly expressed using big O notation, typically 
+
+Table of common time complexities
+Further information: Computational complexity of mathematical operations
+The following table summarizes some classes of commonly encountered time complexities. In the table, poly(x) = xO(1), i.e., polynomial in x.
+
+"Constant time" redirects here. For programming technique to avoid a timing attack, see Timing attack § Avoidance.
+An algorithm is said to be constant time (also written as 
+
+Despite the name "constant time", the running time does not have to be independent of the problem size, but an upper bound for the running time has to be independent of the problem size. For example, the task "exchange the values of a and b if necessary so that 
+
+Logarithmic time
+Further information: Logarithmic growth
+An algorithm is said to take logarithmic time when 
+Algorithms taking logarithmic time are commonly found in operations on binary trees or when using binary search.
+
+An example of logarithmic time is given by dictionary search. Consider a dictionary D which contains n entries, sorted in alphabetical order. We suppose that, for 
+
+The specific term sublinear time algorithm commonly refers to randomized algorithms that sample a small fraction of their inputs and process them efficiently to approximately infer properties of the entire instance.[9] This type of sublinear time algorithm is closely related to property testing and statistics.
+
+Other settings where algorithms can run in sublinear time include:
+
+Parallel algorithms that have linear or greater total work (allowing them to read the entire input), but sub-linear depth.
+Algorithms that have guaranteed assumptions on the input structure. An important example are operations on data structures, e.g. binary search in a sorted array.
+Algorithms that search for local structure in the input, for example finding a local minimum in a 1-D array (can be solved in 
+
+Linear time is the best possible time complexity in situations where the algorithm has to sequentially read its entire input. Therefore, much research has been invested into discovering algorithms exhibiting linear time or, at least, nearly linear time. This research includes both software and hardware methods. There are several hardware technologies which exploit parallelism to provide this. An example is content-addressable memory. This concept of linear time is used in string matching algorithms such as the Boyer–Moore string-search algorithm and Ukkonen's algorithm.
+
+Quasilinear time
+An algorithm is said to run in quasilinear time (also referred to as log-linear time) if 
+
+For example, simple, comparison-based sorting algorithms are quadratic (e.g. insertion sort), but more advanced algorithms can be found that are subquadratic (e.g. shell sort). No general-purpose sorts run in linear time, but the change from quadratic to sub-quadratic is of great practical importance.
+
+Polynomial time
+Main article: P (complexity)
+An algorithm is said to be of polynomial time if its running time is upper bounded by a polynomial expression in the size of the input for the algorithm, that is, T(n) = O(nk) for some positive constant k.[1][13] Problems for which a deterministic polynomial-time algorithm exists belong to the complexity class P, which is central in the field of computational complexity theory. Cobham's thesis states that polynomial time is a synonym for "tractable", "feasible", "efficient", or "fast".[14]
+
+Some examples of polynomial-time algorithms:
+
+The selection sort sorting algorithm on n integers performs 
+and is a polynomial-time algorithm.
+All the basic arithmetic operations (addition, subtraction, multiplication, division, and comparison) can be done in polynomial time.
+Maximum matchings in graphs can be found in polynomial time. In some contexts, especially in optimization, one differentiates between strongly polynomial time and weakly polynomial time algorithms.
+These two concepts are only relevant if the inputs to the algorithms consist of integers.
+
+Complexity classes
+The concept of polynomial time leads to several complexity classes in computational complexity theory. Some important classes defined using polynomial time are the following.
+
+P: The complexity class of decision problems that can be solved on a deterministic Turing machine in polynomial time
+NP: The complexity class of decision problems that can be solved on a non-deterministic Turing machine in polynomial time
+ZPP: The complexity class of decision problems that can be solved with zero error on a probabilistic Turing machine in polynomial time
+RP: The complexity class of decision problems that can be solved with 1-sided error on a probabilistic Turing machine in polynomial time.
+BPP: The complexity class of decision problems that can be solved with 2-sided error on a probabilistic Turing machine in polynomial time
+BQP: The complexity class of decision problems that can be solved with 2-sided error on a quantum Turing machine in polynomial time
+P is the smallest time-complexity class on a deterministic machine which is robust in terms of machine model changes. (For example, a change from a single-tape Turing machine to a multi-tape machine can lead to a quadratic speedup, but any algorithm that runs in polynomial time under one model also does so on the other.) Any given abstract machine will have a complexity class corresponding to the problems which can be solved in polynomial time on that machine.
+
+Superpolynomial time
+An algorithm is defined to take superpolynomial time if T(n) is not bounded above by any polynomial. Using little omega notation, it is ω(nc) time for all constants c, where n is the input parameter, typically the number of bits in the input.
+
+For example, an algorithm that runs for 2n steps on an input of size n requires superpolynomial time (more specifically, exponential time).
+
+An algorithm that uses exponential resources is clearly superpolynomial, but some algorithms are only very weakly superpolynomial. For example, the Adleman–Pomerance–Rumely primality test runs for nO(log log n) time on n-bit inputs; this grows faster than any polynomial for large enough n, but the input size must become impractically large before it cannot be dominated by a polynomial with small degree.
+
+An algorithm that requires superpolynomial time lies outside the complexity class P. Cobham's thesis posits that these algorithms are impractical, and in many cases they are. Since the P versus NP problem is unresolved, it is unknown whether NP-complete problems require superpolynomial time.
+
+Quasi-polynomial time
+Main article: Quasi-polynomial time
+Quasi-polynomial time algorithms are algorithms whose running time exhibits quasi-polynomial growth, a type of behavior that may be slower than polynomial time but yet is significantly faster than exponential time. The worst case running time of a quasi-polynomial time algorithm is 
+Relation to NP-complete problems
+In complexity theory, the unsolved P versus NP problem asks if all problems in NP have polynomial-time algorithms. All the best-known algorithms for NP-complete problems like 3SAT etc. take exponential time. Indeed, it is conjectured for many natural NP-complete problems that they do not have sub-exponential time algorithms. Here "sub-exponential time" is taken to mean the second definition presented below. (On the other hand, many graph problems represented in the natural way by adjacency matrices are solvable in subexponential time simply because the size of the input is the square of the number of vertices.) This conjecture (for the k-SAT problem) is known as the exponential time hypothesis.[17] Since it is conjectured that NP-complete problems do not have quasi-polynomial time algorithms, some inapproximability results in the field of approximation algorithms make the assumption that NP-complete problems do not have quasi-polynomial time algorithms. For example, see the known inapproximability results for the set cover problem.
+
+Sub-exponential time
+The term sub-exponential time is used to express that the running time of some algorithm may grow faster than any polynomial but is still significantly smaller than an exponential. In this sense, problems that have sub-exponential time algorithms are somewhat more tractable than those that only have exponential algorithms. The precise definition of "sub-exponential" is not generally agreed upon,[18] however the two most widely used are below.
+
+First definition
+A problem is said to be sub-exponential time solvable if it can be solved in running times whose logarithms grow smaller than any given polynomial. More precisely, a problem is in sub-exponential time if for every ε > 0 there exists an algorithm which solves the problem in time O(2nε). The set of all such problems is the complexity class SUBEXP which can be defined in terms of DTIME as follows.[6][19][20][21]
+
+
+Exponential time hypothesis
+Main article: Exponential time hypothesis
+The exponential time hypothesis (ETH) is that 3SAT, the satisfiability problem of Boolean formulas in conjunctive normal form with at most three literals per clause and with n variables, cannot be solved in time 2o(n). More precisely, the hypothesis is that there is some absolute constant c > 0 such that 3SAT cannot be decided in time 2cn by any deterministic Turing machine. With m denoting the number of clauses, ETH is equivalent to the hypothesis that kSAT cannot be solved in time 2o(m) for any integer k ≥ 3.[26] The exponential time hypothesis implies P ≠ NP.
+
+Exponential time
+An algorithm is said to be exponential time, if T(n) is upper bounded by 2poly(n), where poly(n) is some polynomial in n. More formally, an algorithm is exponential time if T(n) is bounded by O(2nk) for some constant k. Problems which admit exponential time algorithms on a deterministic Turing machine form the complexity class known as EXP.
+
+
+An example of an algorithm that runs in factorial time is bogosort, a notoriously inefficient sorting algorithm based on trial and error. Bogosort sorts a list of n items by repeatedly shuffling the list until it is found to be sorted. In the average case, each pass through the bogosort algorithm will examine one of the n! orderings of the n items. If the items are distinct, only one such ordering is sorted. Bogosort shares patrimony with the infinite monkey theorem.

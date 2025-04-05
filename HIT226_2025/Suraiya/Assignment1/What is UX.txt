@@ -1,0 +1,28 @@
+What is the difference between UI and UX Design
+
+Whether or not UI and UX design are a mystery to you, it's safe to say that each workplace has a slightly different approach. Here's a look into the essence of both disciplines.
+
+Yin and yang are similar to UI and UX in more ways than one. Not only are the pair inseparable, unable to exist without one another, but there are also very few people who can tell the difference between the two. Okay, this might be an overstatement for UI and UX design, but who here actually knows which is yin and which is yang? Without further ado, let’s take an in-depth look into the profession. We’ll clarify what the difference between UI and UX design actually is and go over some of the key stages involved in each one:
+
+
+
+UI and UX design: the basic definitions
+
+It’s true that a UI (user interface) or UX (user experience) designers’ main aim is to enhance users’ satisfaction, by creating products and interfaces that are intuitive, simple and efficient. And many people have a part to play in this, including developers, content writers and more. But what exactly is each designer’s role within this overall aim? In general terms, UI is about the visual design of the product interface. Depending on the nature of the product, this normally includes the layout, icons, buttons, information architecture, colors, typography, animations and illustrations. And as the name suggests, UX is about the user, or rather, human experience. It’s about analyzing people’s intents when they use the product – what they should feel, what they need to understand and what action they should eventually take. In most cases, this part is done first, followed by the visual design.
+
+
+To summarize with an effective metaphor, you can think of it as a house: UX is about providing the skeletal structure, deciding where each room should be placed, planning the electricity system and other structure-related aspects. The UI is more about the details, such as the doorknobs, curtains, colors and more. In the end, all these elements come together to make up a whole experience and atmosphere.
+
+
+These might sound like two very separate areas of expertise, and it’s true – they are different and each one requires a wide array of skill sets. However, just like coffee and cake, they complete one another. Imagine, for example, an instruction manual for a complex coffee machine. It could be the most beautifully designed thing in the world, with the most stunning color palette and on-trend fonts, but if it the user doesn’t manage to understand what they’re supposed to do, they may as well throw it away (or hang it up on their wall). That’s exactly where UX comes in. As the two professions are so intertwined, at Wix, designers specialize in both UI and UX – a requirement that is brought up right from the initial design interview. This allows them to package an optimal product experience, that includes spot-on functionality, content and visuals.
+
+
+
+Is UX just about functionality?
+
+A large part of UX is about making a product functional, but the road to perfect functionality is long and winding. When it comes to the house example (hint: look up!), certain things might be obvious to us, as we have personal experience of them. We know that it makes no sense for the electricity sockets to be too high up to be reached and that a kitchen sink that’s far away from the dishwasher is a nuisance, not to mention having to get out of bed to switch the light off. But when it comes to developing other products of whom we’re not users, further work and investigation is required. As well as the structure and functionality, many products also involve visual and textual experiences, which is why UX designers and writers work together closely, especially at the beginning of a project. Without the right text, it’s difficult to test the product, so taking care of the text from the start is important. On top of working with UX writers or microcopy writers, designers from this field also collaborate with a number of other team members, such as product managers, engineers and more. Together, they conduct the following research and processes, while constantly keeping in mind the desire to create a product made up of an optimal mixture of business goals and user needs:
+
+
+– Product analysis: gather BI (Business Intelligence) to understand more about your users’ behavior, know support issues users have faced in the past or are likely to face, do competitive analysis, pinpoint the pain points and determine the goal of your product. As soon as you have a goal, you can create a plan and stay focused on your purpose throughout the process.
+
+– Create low fidelity wireframes and interactive prototypes that include user flows, focusing on allowing users to fulfil their desired goals. To do this in the best way, know which personas will be using your product, what their aims are, and what their entry points are. Creating various iterations will help you understand the different scenarios of the product and which screens and panels are required. This preferably comes before the visual part of the design and even more importantly, before the technical developments are too advanced.
